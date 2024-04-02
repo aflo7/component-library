@@ -7,18 +7,26 @@ import { Route } from 'react-router-dom';
 import { Routes } from 'react-router-dom';
 import Navigation from './components/avixa/Navigation';
 
+// import React from 'react'
+
+export const Home = () => {
+  return (
+    <div>Home</div>
+  )
+}
+
+
 export default function App() {
   // const [count, setCount] = useState(0)
 
   return (
     <>
-      <HashRouter>
+      <HashRouter basename=''>
         <h1>Component Library</h1>
         <Routes>
-          <Route path="" element={<Navigation />} />
-          <Route path="component-library/avixa" element={<Navigation />} />
-          <Route path="avixa" element={<Navigation />} />
-          <Route path="sss" element={<Navigation />} />
+          <Route path="/" element={<Home />} />
+          <Route path="/avixa" element={<Navigation />} />
+          {/* routes begin with # with the HashRouter */}
 
 
 

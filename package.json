@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://aflo7.github.io",
+  "homepage": "https://aflo7.github.io/component-library/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
