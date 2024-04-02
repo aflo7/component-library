@@ -1,0 +1,66 @@
+.vista-wrapper {
+  // height: 600px;
+  // background-color: black;
+  nav {
+    // border: 1px solid red;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    color: white;
+  }
+
+  .vista-logo {
+    height: 30px;
+    cursor: pointer;
+  }
+
+  .right-nav-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  // .usa-icon {
+  //   font-size: 1rem;
+
+  // }
+
+  .right-nav-wrapper > p {
+text-transform: uppercase;
+font-size: 0.7rem;
+cursor: pointer;
+
+
+  }
+
+  .usa-icon {
+    cursor: pointer;
+
+
+  }
+
+  @media screen and (min-width: 800px) {
+    .vista-logo {
+      height: 40px;
+    }
+
+    .right-nav-wrapper > p {
+
+      font-size: 1.2rem;
+      // color: red;
+    }
+
+    .right-nav-wrapper {
+      display: flex;
+      align-items: center;
+      gap: 4rem;
+    }
+
+    .usa-icon {
+      font-size: 2rem;
+
+    }
+  }
+}

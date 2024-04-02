@@ -5,7 +5,8 @@ import './App.css';
 import { BrowserRouter, HashRouter } from 'react-router-dom';
 import { Route } from 'react-router-dom';
 import { Routes } from 'react-router-dom';
-import Navigation from './components/avixa/Navigation';
+import {default as AvixaNavigation} from './components/avixa/Navigation';
+import {default as VistaNavigation} from './components/vista/Navigation';
 
 // import React from 'react'
 
@@ -25,7 +26,9 @@ export default function App() {
         <h1>Component Library</h1>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/avixa" element={<Navigation />} />
+          <Route path="/avixa" element={<AvixaNavigation />} />
+          <Route path="/vista" element={<VistaNavigation />} />
+
           {/* routes begin with # with the HashRouter */}
 
 
