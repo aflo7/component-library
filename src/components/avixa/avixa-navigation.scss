@@ -1,0 +1,58 @@
+.avixa-wrapper {
+  nav {
+    padding: 1rem;
+    display: grid;
+    // justify-content: center;
+    // justify-content: space-;
+    // background-color: red;
+    // border: 1px solid red;
+    box-shadow: 0 3px 3px 2px rgba(0,0,0,.2);
+  }
+
+  nav > div {
+    grid-area: 1/1;
+  }
+
+  nav > div:nth-child(1) {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  nav > div:nth-child(2) {
+    // display: flex;
+    // justify-content: center;
+    // border: 1px solid red;
+    width: fit-content;
+    margin: 0 auto;
+  }
+
+  .avixa-logo {
+    height: 60px;
+    cursor: pointer;
+  }
+  .left-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    // display: none;
+    // border: 1px solid red;
+  }
+
+  .burger-icon {
+    font-size: 2.1rem;
+  }
+
+  .avixa-text {
+    // margin: 0 auto;
+    // position: relativ
+    // position: relative;
+    // border: 1px solid red;
+    
+  }
+
+  .menu-text {
+    font-size: 0.8rem;
+  }
+}
