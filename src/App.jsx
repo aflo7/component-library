@@ -8,6 +8,7 @@ import { Routes } from 'react-router-dom';
 import { default as AvixaNavigation } from './components/avixa/Navigation';
 import { default as VistaNavigation } from './components/vista/Navigation';
 import { default as SerigraphNavigation } from './components/serigraph/Navigation';
+import {default as VetsAccessNavigation} from './components/vets-access/Navigation'
 
 
 // import React from 'react'
@@ -34,6 +35,10 @@ export const Home = () => {
       <Link to="/serigraph">
         <div className="home-link">Serigraph Navigation Component</div>
       </Link>
+
+      <Link to="/vets-access">
+        <div className="home-link">Vets Access LLC Navigation Component</div>
+      </Link>
     </div>
   );
 };
@@ -50,6 +55,8 @@ export default function App() {
           <Route path="/avixa" element={<AvixaNavigation />} />
           <Route path="/vista" element={<VistaNavigation />} />
           <Route path="/serigraph" element={<SerigraphNavigation />} />
+          <Route path="/vets-access" element={<VetsAccessNavigation />} />
+
 
 
           {/* routes begin with # with the HashRouter */}

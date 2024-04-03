@@ -1,0 +1,74 @@
+.vets-access-wrapper {
+
+
+
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    border-bottom: 1px solid gray;
+    border-top: 1px solid gray;
+  }
+  h1 {
+    font-family: 'Roboto Mono', monospace;
+    margin: 0;
+    font-size: 1rem;
+    cursor: pointer;
+    border-bottom: none;
+    background-color: transparent;
+  }
+  
+  .bottom-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    border-bottom: 1px solid gray;
+  
+  }
+  
+  .vets-access-img {
+    height: 60px;
+    width: auto;
+    align-self: flex-start;
+  }
+  
+  .bottom-nav > div:nth-child(2) {
+    align-self: flex-end;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-end;
+    color: gray;
+  
+  }
+  
+  .icon-wrapper {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .the-email {
+    text-decoration: underline;
+  }
+  
+  .burger-menu {
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+  
+  @media screen and (min-width: 1000px) {
+  .bottom-nav {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    // border: 1px solid red;
+  }
+  
+  h1 {
+    font-size: 1.5rem;
+  }
+  }
+
+}
