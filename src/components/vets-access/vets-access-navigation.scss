@@ -13,6 +13,8 @@
   h1 {
     font-family: 'Roboto Mono', monospace;
     margin: 0;
+    padding: 0;
+    // border: 1px solid red;
     font-size: 1rem;
     cursor: pointer;
     border-bottom: none;
@@ -31,6 +33,7 @@
   .vets-access-img {
     height: 60px;
     width: auto;
+    cursor: pointer;
     align-self: flex-start;
   }
   
