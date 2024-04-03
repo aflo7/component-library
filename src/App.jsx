@@ -1,6 +1,3 @@
-import { useState } from 'react';
-import reactLogo from './assets/react.svg';
-import viteLogo from '/vite.svg';
 import './App.css';
 import { HashRouter } from 'react-router-dom';
 import { Route, Link } from 'react-router-dom';
@@ -11,6 +8,7 @@ import { default as SerigraphNavigation } from './components/serigraph/Navigatio
 import {default as VetsAccessNavigation} from './components/vets-access/Navigation'
 import Modal from './components/modal/Modal';
 import {default as KeyBankNavigation} from './components/keybank/Navigation'
+import {default as BunzlNavigation} from './components/bunzl/Navigation'
 
 
 
@@ -48,13 +46,14 @@ export const Home = () => {
       <Link to="/keybank">
         <div className="home-link">Keybank Navigation Component</div>
       </Link>
+      <Link to="/bunzl">
+        <div className="home-link">Bunzl Footer Component</div>
+      </Link>
     </div>
   );
 };
 
 export default function App() {
-  // const [count, setCount] = useState(0)
-
   return (
     <>
       <HashRouter basename="">
@@ -65,14 +64,9 @@ export default function App() {
           <Route path="/vista" element={<VistaNavigation />} />
           <Route path="/serigraph" element={<SerigraphNavigation />} />
           <Route path="/vets-access" element={<VetsAccessNavigation />} />
-
           <Route path="/modal" element={<Modal />} />
           <Route path="/keybank" element={<KeyBankNavigation />} />
-
-
-
-
-          {/* routes begin with # with the HashRouter */}
+          <Route path="/bunzl" element={<BunzlNavigation />} />
         </Routes>
       </HashRouter>
     </>
