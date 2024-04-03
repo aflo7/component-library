@@ -1,0 +1,66 @@
+.serigraph-wrapper {
+
+  nav {
+    background-color: rgb(31,31,31);
+    display: flex;
+    padding: 2rem;
+    justify-content: space-between;
+    color: white;
+    align-items: center;
+    font-size: 1.5rem;
+  }
+
+  .burger-icon {
+    cursor: pointer;
+  }
+
+  .serigraph-logo {
+    cursor: pointer;
+
+  }
+
+  .search-input {
+    display: none;
+  }
+
+
+  .search-wrapper {
+    display: none;
+  }
+
+  @media screen and (min-width: 800px) {
+    .burger-icon {
+      display: none;
+    }
+
+
+  .search-input {
+    display: block;
+    padding: 0.5rem 1rem;
+    border: none;
+    // align-items: center;
+  }
+  
+  .search-icon-wrapper {
+    display: flex;
+    align-items: center;
+    padding: 0.5rem;
+    background-color: black;
+  }
+
+  .search-icon-wrapper:hover {
+
+    background-color: rgb(196,34,48);
+  }
+
+  .search-wrapper {
+    display: flex;
+    cursor: pointer;
+  }
+
+  .search-icon {
+    display: flex;
+  }
+
+  }
+}

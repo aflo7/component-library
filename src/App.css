@@ -2,6 +2,7 @@ h1 {
 margin: 0;
 padding: 1rem;
 border-bottom: 1px solid black;
+font-size: 1.5rem;
 }
 
 * {
@@ -10,10 +11,12 @@ border-bottom: 1px solid black;
 
 body {
   margin: 0;
+  font-family: Verdana, sans-serif;
 }
 
 p {
   margin: 0;
+  font-size: 1.5rem;
 }
 
 
@@ -38,4 +41,14 @@ p {
 
 .back-link:hover {
   background-color: lightgray;
+}
+
+.documentation-text {
+  padding: 1rem;
+  max-width: 1000px;
+  /* text-align: justify; */
+}
+
+.documentation-text > p{
+  padding: 1rem;
 }
