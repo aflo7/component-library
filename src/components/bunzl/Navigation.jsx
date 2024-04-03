@@ -12,7 +12,7 @@ const Navigation = () => {
       </Link>
       <div className="bunzl-wrapper">
         <footer className="footer">
-          <p className="bunzl-copyright-text">Bunzl pic &copy; 2024</p>
+          <p className="bunzl-copyright-text">Bunzl plc &copy; 2024</p>
           <div className="show-text">
             Show full footer
             <AiOutlineDown className="down-arrow" />
