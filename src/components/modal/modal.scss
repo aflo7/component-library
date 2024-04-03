@@ -1,0 +1,72 @@
+.modal-component-wrapper {
+  margin: 1rem;
+
+  .modal-wrapper {
+    background-color: white;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    max-width: 500px;
+    margin: 0 auto;
+    
+  }
+
+  .hand-emoji {
+    font-size: 1.2rem;
+
+  }
+
+  .modal-header {
+    font-weight: bold;
+    font-size: 1.2rem;
+  }
+
+  .cross-icon {
+    // color: red;
+    font-size: 1.2rem;
+    cursor: pointer;
+
+  }
+
+  .blue-wrapper {
+    height: 200px;
+    background-color: rgb(221,228,253);
+    border-radius: 5px;
+    
+  }
+
+  .top-modal {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .no-thanks-btn {
+    color: rgb(99,123,242);
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+background-color: white;
+cursor: pointer;
+  }
+
+  .get-started-btn {
+    background-color: rgb(99,123,242);
+    padding: 10px;
+    border-radius: 5px;
+border: none;
+cursor: pointer;
+color: white;
+
+
+  }
+
+  .btn-wrapper {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+  }
+}

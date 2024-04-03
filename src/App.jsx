@@ -9,6 +9,7 @@ import { default as AvixaNavigation } from './components/avixa/Navigation';
 import { default as VistaNavigation } from './components/vista/Navigation';
 import { default as SerigraphNavigation } from './components/serigraph/Navigation';
 import {default as VetsAccessNavigation} from './components/vets-access/Navigation'
+import Modal from './components/modal/Modal';
 
 
 // import React from 'react'
@@ -39,6 +40,10 @@ export const Home = () => {
       <Link to="/vets-access">
         <div className="home-link">Vets Access LLC Navigation Component</div>
       </Link>
+
+      <Link to="/modal">
+        <div className="home-link">Modal Component</div>
+      </Link>
     </div>
   );
 };
@@ -56,6 +61,8 @@ export default function App() {
           <Route path="/vista" element={<VistaNavigation />} />
           <Route path="/serigraph" element={<SerigraphNavigation />} />
           <Route path="/vets-access" element={<VetsAccessNavigation />} />
+
+          <Route path="/modal" element={<Modal />} />
 
 
 
