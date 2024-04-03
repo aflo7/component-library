@@ -2,7 +2,7 @@ import { useState } from 'react';
 import reactLogo from './assets/react.svg';
 import viteLogo from '/vite.svg';
 import './App.css';
-import { BrowserRouter, HashRouter } from 'react-router-dom';
+import { HashRouter } from 'react-router-dom';
 import { Route, Link } from 'react-router-dom';
 import { Routes } from 'react-router-dom';
 import { default as AvixaNavigation } from './components/avixa/Navigation';
@@ -10,9 +10,9 @@ import { default as VistaNavigation } from './components/vista/Navigation';
 import { default as SerigraphNavigation } from './components/serigraph/Navigation';
 import {default as VetsAccessNavigation} from './components/vets-access/Navigation'
 import Modal from './components/modal/Modal';
+import {default as KeyBankNavigation} from './components/keybank/Navigation'
 
 
-// import React from 'react'
 
 export const Home = () => {
   return (
@@ -44,6 +44,10 @@ export const Home = () => {
       <Link to="/modal">
         <div className="home-link">Modal Component</div>
       </Link>
+
+      <Link to="/keybank">
+        <div className="home-link">Keybank Navigation Component</div>
+      </Link>
     </div>
   );
 };
@@ -63,6 +67,8 @@ export default function App() {
           <Route path="/vets-access" element={<VetsAccessNavigation />} />
 
           <Route path="/modal" element={<Modal />} />
+          <Route path="/keybank" element={<KeyBankNavigation />} />
+
 
 
 
