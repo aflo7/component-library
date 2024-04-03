@@ -15,3 +15,27 @@ body {
 p {
   margin: 0;
 }
+
+
+.home-link {
+  border: 1px solid black;
+  padding: 1rem;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.home-link:hover {
+  background-color: lightgray;
+}
+
+.back-link {
+  border: 1px solid black;
+  padding: 1rem;
+  border-radius: 10px;
+  cursor: pointer;
+  margin: 1rem;
+}
+
+.back-link:hover {
+  background-color: lightgray;
+}

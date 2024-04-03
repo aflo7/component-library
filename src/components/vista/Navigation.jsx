@@ -1,9 +1,16 @@
 import React from 'react';
 import './vista-navigation.scss';
 import { LiaFlagUsaSolid } from "react-icons/lia";
+import { Link } from 'react-router-dom';
+
+
 const Navigation = () => {
   return (
     <div className="vista-wrapper">
+      <Link to="/">
+      
+      <div className='back-link'>Go back</div>
+      </Link>
       <nav>
         <img
           className="vista-logo"
