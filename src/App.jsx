@@ -11,6 +11,7 @@ import { default as KeyBankNavigation } from './components/keybank/Navigation';
 import { default as BunzlNavigation } from './components/bunzl/Navigation';
 import Sidebar from './components/sidebar/Sidebar';
 import { default as ZollNavigation } from './components/zoll/Navigation';
+import {default as CarbonWebButton} from './components/carbonweb/Button';
 
 export const Home = () => {
   return (
@@ -57,6 +58,10 @@ export const Home = () => {
       <Link to="/sidebar">
         <div className="home-link">NetJets Sidebar Component</div>
       </Link>
+
+      <Link to="/carbon-web">
+        <div className="home-link">CarbonWeb Button Component</div>
+      </Link>
     </div>
   );
 };
@@ -88,6 +93,8 @@ export default function App() {
           {/* <Route path="/bunzl" element={<BunzlNavigation />} /> */}
           <Route path="/zoll" element={<ZollNavigation />} />
           <Route path="/sidebar" element={<Sidebar />} />
+          <Route path="/carbon-web" element={<CarbonWebButton />} />
+
 
 
           <Route path="*" element={<NotFound />} />
