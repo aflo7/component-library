@@ -5,15 +5,12 @@ import { Routes } from 'react-router-dom';
 import { default as AvixaNavigation } from './components/avixa/Navigation';
 import { default as VistaNavigation } from './components/vista/Navigation';
 import { default as SerigraphNavigation } from './components/serigraph/Navigation';
-import {default as VetsAccessNavigation} from './components/vets-access/Navigation'
+import { default as VetsAccessNavigation } from './components/vets-access/Navigation';
 import Modal from './components/modal/Modal';
-import {default as KeyBankNavigation} from './components/keybank/Navigation'
-import {default as BunzlNavigation} from './components/bunzl/Navigation'
+import { default as KeyBankNavigation } from './components/keybank/Navigation';
+import { default as BunzlNavigation } from './components/bunzl/Navigation';
 
-import {default as ZollNavigation} from './components/zoll/Navigation'
-
-
-
+import { default as ZollNavigation } from './components/zoll/Navigation';
 
 export const Home = () => {
   return (
@@ -60,6 +57,17 @@ export const Home = () => {
   );
 };
 
+const NotFound = () => {
+  return (
+    <div className="not-found-wrapper">
+      <Link to="/">
+        <div className="back-link">Return home</div>
+      </Link>
+      <div style={{margin: '1rem'}}>Component not found</div>
+    </div>
+  );
+};
+
 export default function App() {
   return (
     <>
@@ -75,6 +83,8 @@ export default function App() {
           <Route path="/keybank" element={<KeyBankNavigation />} />
           <Route path="/bunzl" element={<BunzlNavigation />} />
           <Route path="/zoll" element={<ZollNavigation />} />
+
+          <Route path="*" element={<NotFound />} />
         </Routes>
       </HashRouter>
     </>
