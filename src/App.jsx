@@ -9,7 +9,7 @@ import { default as VetsAccessNavigation } from './components/vets-access/Naviga
 import Modal from './components/modal/Modal';
 import { default as KeyBankNavigation } from './components/keybank/Navigation';
 import { default as BunzlNavigation } from './components/bunzl/Navigation';
-
+import Sidebar from './components/sidebar/Sidebar';
 import { default as ZollNavigation } from './components/zoll/Navigation';
 
 export const Home = () => {
@@ -53,6 +53,10 @@ export const Home = () => {
       <Link to="/zoll">
         <div className="home-link">Zoll Navigation Component</div>
       </Link>
+
+      <Link to="/sidebar">
+        <div className="home-link">NetJets Sidebar Component</div>
+      </Link>
     </div>
   );
 };
@@ -83,6 +87,8 @@ export default function App() {
           <Route path="/keybank" element={<KeyBankNavigation />} />
           {/* <Route path="/bunzl" element={<BunzlNavigation />} /> */}
           <Route path="/zoll" element={<ZollNavigation />} />
+          <Route path="/sidebar" element={<Sidebar />} />
+
 
           <Route path="*" element={<NotFound />} />
         </Routes>
