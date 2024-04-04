@@ -1,0 +1,22 @@
+.zoll-wrapper {
+
+.zoll-logo {
+  height: 60px;
+  cursor: pointer;
+
+}
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: rgb(56,128,194);
+    padding: 1rem 2rem;
+    border-bottom: 1px solid lightgray;
+    border-top: 1px solid lightgray;
+  }
+
+  .burger-icon {
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+}

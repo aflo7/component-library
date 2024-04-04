@@ -10,6 +10,9 @@ import Modal from './components/modal/Modal';
 import {default as KeyBankNavigation} from './components/keybank/Navigation'
 import {default as BunzlNavigation} from './components/bunzl/Navigation'
 
+import {default as ZollNavigation} from './components/zoll/Navigation'
+
+
 
 
 export const Home = () => {
@@ -49,6 +52,10 @@ export const Home = () => {
       <Link to="/bunzl">
         <div className="home-link">Bunzl Footer Component</div>
       </Link>
+
+      <Link to="/zoll">
+        <div className="home-link">Zoll Navigation Component</div>
+      </Link>
     </div>
   );
 };
@@ -67,6 +74,7 @@ export default function App() {
           <Route path="/modal" element={<Modal />} />
           <Route path="/keybank" element={<KeyBankNavigation />} />
           <Route path="/bunzl" element={<BunzlNavigation />} />
+          <Route path="/zoll" element={<ZollNavigation />} />
         </Routes>
       </HashRouter>
     </>
