@@ -14,6 +14,8 @@ import { default as ZollNavigation } from './components/zoll/Navigation';
 import { default as MagnaNavigation } from './components/magna/Navigation';
 
 import {default as CarbonWebButton} from './components/carbonweb/Button';
+import {default as BeeHexNavigation} from './components/beehex/Navigation';
+
 
 export const Home = () => {
   return (
@@ -68,6 +70,10 @@ export const Home = () => {
       <Link to="/magna">
         <div className="home-link">Magna Navigation Component</div>
       </Link>
+
+      <Link to="/beehex">
+        <div className="home-link">BeeHex Navigation Component</div>
+      </Link>
     </div>
   );
 };
@@ -102,6 +108,8 @@ export default function App() {
           <Route path="/magna" element={<MagnaNavigation />} />
 
           <Route path="/carbon-web" element={<CarbonWebButton />} />
+          <Route path="/beehex" element={<BeeHexNavigation />} />
+
 
 
 

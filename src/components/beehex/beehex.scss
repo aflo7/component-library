@@ -1,0 +1,40 @@
+.beehex-wrapper {
+  .nav-wrapper {
+    border-bottom: 1px solid lightgray;
+  }
+  nav {
+    display: flex;
+    justify-content: center;
+    // border: 1px solid red;
+    align-items: center;
+    padding: 1rem;
+    max-width: 1000px;
+    // width: 100%;
+    margin: 0 auto;
+  }
+
+  .beehex-logo {
+    height: 70px;
+    cursor: pointer;
+  }
+
+  .right-nav {
+    display: none;
+  }
+
+  @media screen and (min-width: 1000px) {
+    .right-nav {
+      display: flex;
+      gap: 3rem;
+      text-transform: uppercase;
+    }
+
+    .right-nav > p {
+      cursor: pointer;
+    }
+
+    nav {
+      justify-content: space-between;
+    }
+  }
+}
