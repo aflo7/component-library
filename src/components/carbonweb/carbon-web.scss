@@ -3,20 +3,20 @@
   border-top: 1px solid black;
   .book-a-demo-btn {
     // font-family: Arial, Helvetica, sans-serif;
-  padding: 0.75rem 1rem;
-background-color: rgb(79,173,191);
-color: white;
-border: none;
-border-radius: 5px;
-font-size: 1rem;
-display: flex;
-align-items: center;
-gap: 0.5rem;
-cursor: pointer;
-font-weight: bold;
+    padding: 0.75rem 1rem;
+    background-color: rgb(79, 173, 191);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    cursor: pointer;
+    font-weight: bold;
   }
 
   .book-a-demo-btn:hover {
-    background-color: #69D757;
+    background-color: #69d757;
   }
 }
