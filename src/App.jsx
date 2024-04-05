@@ -48,9 +48,9 @@ export const Home = () => {
         <div className="home-link">Modal Component</div>
       </Link>
 
-      <Link to="/keybank">
+      {/* <Link to="/keybank">
         <div className="home-link">Keybank Navigation Component</div>
-      </Link>
+      </Link> */}
       {/* <Link to="/bunzl">
         <div className="home-link">Bunzl Footer Component</div>
       </Link> */}
@@ -101,7 +101,7 @@ export default function App() {
           <Route path="/serigraph" element={<SerigraphNavigation />} />
           <Route path="/vets-access" element={<VetsAccessNavigation />} />
           <Route path="/modal" element={<Modal />} />
-          <Route path="/keybank" element={<KeyBankNavigation />} />
+          {/* <Route path="/keybank" element={<KeyBankNavigation />} /> */}
           {/* <Route path="/bunzl" element={<BunzlNavigation />} /> */}
           <Route path="/zoll" element={<ZollNavigation />} />
           <Route path="/sidebar" element={<Sidebar />} />
