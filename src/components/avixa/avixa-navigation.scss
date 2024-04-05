@@ -2,12 +2,7 @@
   nav {
     padding: 1rem;
     display: grid;
-    // justify-content: center;
-    // justify-content: space-;
-    // background-color: red;
-    // border: 1px solid red;
-    border-top: 1px solid black;
-    box-shadow: 0 3px 3px 2px rgba(0,0,0,.2);
+    box-shadow: 0 3px 3px 2px rgba(0, 0, 0, 0.2);
   }
 
   nav > div {
@@ -21,9 +16,6 @@
   }
 
   nav > div:nth-child(2) {
-    // display: flex;
-    // justify-content: center;
-    // border: 1px solid red;
     width: fit-content;
     margin: 0 auto;
   }
@@ -37,20 +29,10 @@
     flex-direction: column;
     align-items: center;
     cursor: pointer;
-    // display: none;
-    // border: 1px solid red;
   }
 
   .burger-icon {
     font-size: 2.1rem;
-  }
-
-  .avixa-text {
-    // margin: 0 auto;
-    // position: relativ
-    // position: relative;
-    // border: 1px solid red;
-    
   }
 
   .menu-text {

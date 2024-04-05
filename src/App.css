@@ -60,3 +60,7 @@ a {}
 .not-found-wrapper {
   /* padding: 1rem; */
 }
+
+.back-link-wrapper {
+  border-bottom: 1px solid black;
+}

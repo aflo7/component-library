@@ -8,7 +8,10 @@ const Navigation = () => {
   return (
     <div className="avixa-wrapper">
       <Link to="/">
+        <div className="back-link-wrapper">
+
         <div className="back-link">Go back</div>
+        </div>
       </Link>
       <nav>
         <div>
