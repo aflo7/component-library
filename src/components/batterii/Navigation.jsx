@@ -7,12 +7,9 @@ import { Link } from 'react-router-dom';
 const Navigation = () => {
   return (
     <div className="batterii-wrapper">
-     
-
-     <Link to="/">
-        <div className='back-link-wrapper'>
-
-        <div className="back-link">Go back</div>
+      <Link to="/">
+        <div className="back-link-wrapper">
+          <div className="back-link">Go back</div>
         </div>
       </Link>
       <div className="nav-wrapper">
@@ -23,7 +20,13 @@ const Navigation = () => {
             <TbMenuDeep className="tb-icon" />
           </div>
 
-          <div className="start-now-wrapper">Start Now</div>
+          <div className="right-nav">
+            <div>About</div>
+            <div>Features</div>
+            <div>Use Cases</div>
+            <div>Support</div>
+            <div className="start-now-wrapper">Start Now</div>
+          </div>
         </nav>
       </div>
     </div>
