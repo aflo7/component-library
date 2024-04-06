@@ -25,7 +25,7 @@ p {
 .home-link {
   border: 1px solid black;
   padding: 1rem;
-  border-radius: 10px;
+  border-radius: 5px;
   cursor: pointer;
 }
 
@@ -36,7 +36,7 @@ p {
 .back-link {
   border: 1px solid black;
   padding: 1rem;
-  border-radius: 10px;
+  border-radius: 5px;
   cursor: pointer;
   margin: 1rem;
 }
