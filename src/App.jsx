@@ -16,6 +16,8 @@ import { default as MagnaNavigation } from './components/magna/Navigation';
 import {default as CarbonWebButton} from './components/carbonweb/Button';
 import {default as BeeHexNavigation} from './components/beehex/Navigation';
 import {default as BatteriNavigation} from './components/batterii/Navigation'
+import {default as SoharsNavigation} from './components/sohars/Navigation'
+
 
 
 export const Home = () => {
@@ -79,6 +81,10 @@ export const Home = () => {
       <Link to="/batterii">
         <div className="home-link">Batterii Navigation Component</div>
       </Link>
+
+      <Link to="/sohars">
+        <div className="home-link">Sohars Navigation Component</div>
+      </Link>
     </div>
   );
 };
@@ -115,6 +121,8 @@ export default function App() {
           <Route path="/carbon-web" element={<CarbonWebButton />} />
           <Route path="/beehex" element={<BeeHexNavigation />} />
           <Route path="/batterii" element={<BatteriNavigation />} />
+          <Route path="/sohars" element={<SoharsNavigation />} />
+
 
 
 
