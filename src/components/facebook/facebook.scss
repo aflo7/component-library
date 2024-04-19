@@ -1,0 +1,48 @@
+.facebook-wrapper {
+
+  h1 {
+    all: unset;
+    font-weight: bold;
+    font-size: 1.5rem;
+  }
+
+  .marketplace-sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 400px;
+    height: 400px;
+    background-color: rgb(255,255,255);
+    border: 1px solid black;
+    color: black;
+    padding: 1rem;
+  }
+
+  .marketplace-sidebar > div{
+    // background-color: gray;
+  }
+
+  .marketplace-top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .search {
+    padding: 0.5rem 1rem;
+    border-radius: 1000px;
+    // border: none;
+    border: 1px solid black;
+    width: 100%;
+  }
+
+  .marketplace-select {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .marketplace-icon {
+    font-size: 1.5rem;
+  }
+}

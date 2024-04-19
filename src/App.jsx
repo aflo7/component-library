@@ -10,15 +10,15 @@ import Modal from './components/modal/Modal';
 import { default as KeyBankNavigation } from './components/keybank/Navigation';
 import { default as BunzlNavigation } from './components/bunzl/Navigation';
 import Sidebar from './components/sidebar/Sidebar';
+import {default as FacebookSidebar} from './components/facebook/Sidebar';
+
 import { default as ZollNavigation } from './components/zoll/Navigation';
 import { default as MagnaNavigation } from './components/magna/Navigation';
 
-import {default as CarbonWebButton} from './components/carbonweb/Button';
-import {default as BeeHexNavigation} from './components/beehex/Navigation';
-import {default as BatteriNavigation} from './components/batterii/Navigation'
-import {default as SoharsNavigation} from './components/sohars/Navigation'
-
-
+import { default as CarbonWebButton } from './components/carbonweb/Button';
+import { default as BeeHexNavigation } from './components/beehex/Navigation';
+import { default as BatteriNavigation } from './components/batterii/Navigation';
+import { default as SoharsNavigation } from './components/sohars/Navigation';
 
 export const Home = () => {
   return (
@@ -85,6 +85,10 @@ export const Home = () => {
       <Link to="/sohars">
         <div className="home-link">Sohars Navigation Component</div>
       </Link>
+
+      <Link to="/marketplace">
+        <div className="home-link">Marketplace Sidebar Component</div>
+      </Link>
     </div>
   );
 };
@@ -95,7 +99,7 @@ const NotFound = () => {
       <Link to="/">
         <div className="back-link">Return home</div>
       </Link>
-      <div style={{margin: '1rem'}}>Component not found</div>
+      <div style={{ margin: '1rem' }}>Component not found</div>
     </div>
   );
 };
@@ -117,15 +121,11 @@ export default function App() {
           <Route path="/zoll" element={<ZollNavigation />} />
           <Route path="/sidebar" element={<Sidebar />} />
           <Route path="/magna" element={<MagnaNavigation />} />
-
           <Route path="/carbon-web" element={<CarbonWebButton />} />
           <Route path="/beehex" element={<BeeHexNavigation />} />
           <Route path="/batterii" element={<BatteriNavigation />} />
           <Route path="/sohars" element={<SoharsNavigation />} />
-
-
-
-
+          <Route path="/marketplace" element={<FacebookSidebar />} />
 
 
           <Route path="*" element={<NotFound />} />
