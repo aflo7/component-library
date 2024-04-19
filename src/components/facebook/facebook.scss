@@ -4,6 +4,7 @@
     all: unset;
     font-weight: bold;
     font-size: 1.5rem;
+    cursor: pointer;
   }
 
   .marketplace-sidebar {
@@ -23,6 +24,7 @@
     padding: 0.5rem;
     // background-color: lightgray;
     background-color: rgb(240,242,245);
+    border: 1px solid black;
 
     border-radius: 1000px;
     display: flex;
