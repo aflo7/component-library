@@ -1,0 +1,55 @@
+.innovation-wrapper {
+  display: flex;
+  justify-content: center;
+  padding-top: 60px;
+  position: relative;
+  // background-color: red;
+
+
+
+  .innovation-card {
+    background-image: url(https://www.magna.com/images/default-source/video-banner-assets/innovation-435x300-v1-0.webp?sfvrsn=7dc38bf_3);
+    // width: fit-content;
+    background-size: cover;
+    background-position: center;
+    padding: 1rem;
+    cursor: pointer;
+    position: relative;
+    bottom: 0px;
+    transition: bottom 0.5s;
+    
+    &:hover {
+      bottom: 15px;
+      background: black;
+    }
+
+
+    max-width: 260px;
+    width: 100%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 120px;
+
+
+    .innovation-text {
+      font-weight: bold;
+      font-size: 1.5rem;
+    }
+
+    .learn-more-btn {
+      background-color: white;
+      color: black;
+      border: none;
+      padding: 0.5rem 1.2rem;
+      font-weight: bold;
+      // font-size: 1rem;
+      width: fit-content;
+      // cursor: pointer;
+
+    }
+  }
+
+  
+
+}

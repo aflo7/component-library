@@ -7,10 +7,11 @@ import { default as VistaNavigation } from './components/vista/Navigation';
 import { default as SerigraphNavigation } from './components/serigraph/Navigation';
 import { default as VetsAccessNavigation } from './components/vets-access/Navigation';
 import Modal from './components/modal/Modal';
-import { default as KeyBankNavigation } from './components/keybank/Navigation';
-import { default as BunzlNavigation } from './components/bunzl/Navigation';
+// import { default as KeyBankNavigation } from './components/keybank/Navigation';
+// import { default as BunzlNavigation } from './components/bunzl/Navigation';
 import Sidebar from './components/sidebar/Sidebar';
 import {default as FacebookSidebar} from './components/facebook/Sidebar';
+import {default as InnovationCard} from './components/magna/Innovation';
 
 import { default as ZollNavigation } from './components/zoll/Navigation';
 import { default as MagnaNavigation } from './components/magna/Navigation';
@@ -89,6 +90,10 @@ export const Home = () => {
       <Link to="/marketplace">
         <div className="home-link">Marketplace Sidebar Component</div>
       </Link>
+
+      <Link to="/innovation-card">
+        <div className="home-link">Innovation Card Component</div>
+      </Link>
     </div>
   );
 };
@@ -126,6 +131,7 @@ export default function App() {
           <Route path="/batterii" element={<BatteriNavigation />} />
           <Route path="/sohars" element={<SoharsNavigation />} />
           <Route path="/marketplace" element={<FacebookSidebar />} />
+          <Route path="/innovation-card" element={<InnovationCard />} />
 
 
           <Route path="*" element={<NotFound />} />
