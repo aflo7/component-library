@@ -10,8 +10,8 @@ import Modal from './components/modal/Modal';
 // import { default as KeyBankNavigation } from './components/keybank/Navigation';
 // import { default as BunzlNavigation } from './components/bunzl/Navigation';
 import Sidebar from './components/sidebar/Sidebar';
-import {default as FacebookSidebar} from './components/facebook/Sidebar';
-import {default as InnovationCard} from './components/magna/Innovation';
+import { default as FacebookSidebar } from './components/facebook/Sidebar';
+import { default as InnovationCard } from './components/magna/Innovation';
 
 import { default as ZollNavigation } from './components/zoll/Navigation';
 import { default as MagnaNavigation } from './components/magna/Navigation';
@@ -22,6 +22,7 @@ import { default as BatteriNavigation } from './components/batterii/Navigation';
 import { default as SoharsNavigation } from './components/sohars/Navigation';
 import Post from './components/reddit/Post';
 import Subscribe from './components/twitter/Subscribe';
+import JobPost from './components/linkedin/JobPost';
 
 export const Home = () => {
   return (
@@ -57,8 +58,6 @@ export const Home = () => {
       <Link to="/modal">
         <div className="home-link">Modal Component</div>
       </Link>
-
-     
 
       {/* <Link to="/keybank">
         <div className="home-link">Keybank Navigation Component</div>
@@ -106,6 +105,10 @@ export const Home = () => {
       <Link to="/reddit/post">
         <div className="home-link">Reddit Post Component</div>
       </Link>
+
+      <Link to="/linkedin/job-post">
+        <div className="home-link">Linked In Job Post Component</div>
+      </Link>
     </div>
   );
 };
@@ -145,10 +148,10 @@ export default function App() {
           <Route path="/marketplace" element={<FacebookSidebar />} />
           <Route path="/subscribe" element={<Subscribe />} />
           <Route path="/reddit/post" element={<Post />} />
+          <Route path="/linkedin/job-post" element={<JobPost />} />
 
 
           <Route path="/innovation-card" element={<InnovationCard />} />
-
 
           <Route path="*" element={<NotFound />} />
         </Routes>

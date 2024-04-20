@@ -1,0 +1,75 @@
+.job-post-wrapper {
+  width: fit-content;
+  border: 1px solid lightgray;
+  padding: 0.5rem;
+  // margin: 1rem;
+  margin: 0 auto;
+  margin-top: 1rem;
+
+  font-family: system-ui, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue,
+    Fira Sans, Ubuntu, Oxygen, Oxygen Sans, Cantarell, Droid Sans,
+    Apple Color Emoji, Segoe UI Emoji, Segoe UI Emoji, Segoe UI Symbol,
+    Lucida Grande, Helvetica, Arial, sans-serif;
+
+  .job-post {
+    display: flex;
+    gap: 1rem;
+  // margin: 1rem;
+
+  }
+
+  .job-post-right-side {
+    padding: 0.25rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+  }
+
+  .job-title-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 100px;
+  }
+
+  .school-wrapper {
+    height: 20px;
+    width: 20px;
+    background-color: orange;
+  }
+  .school-info-wrapper {
+    display: flex;
+    gap: 0.25rem;
+    align-items: center;
+  }
+
+  .school-info-wrapper > p {
+    color: gray;
+    font-size: 0.8rem;
+  }
+
+  .job-location-wrapper {
+    color: gray;
+  }
+  .posted-date {
+    color: gray;
+    font-size: 0.9rem;
+  }
+
+  .img-wrapper {
+    height: 60px;
+    width: 60px;
+    background-color: lightgray;
+  }
+
+  .job-title {
+    font-weight: bold;
+    color: rgb(45, 100, 188);
+    max-width: 370px;
+    font-size: 1.1rem;
+  }
+  .job-title:hover {
+    cursor: pointer;
+    text-decoration: underline;
+  }
+}
