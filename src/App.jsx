@@ -107,7 +107,7 @@ export const Home = () => {
       </Link>
 
       <Link to="/linkedin/job-post">
-        <div className="home-link">Linked In Job Post Component</div>
+        <div className="home-link">LinkedIn Job Post Component</div>
       </Link>
     </div>
   );
