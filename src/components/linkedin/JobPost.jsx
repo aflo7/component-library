@@ -22,8 +22,8 @@ const JobPost = () => {
               </p>
               <RxCross2 />
             </div>
-            <p>American Greetings</p>
-            <p className="job-location-wrapper">Westlake, OH</p>
+            <p>Company Name</p>
+            <p className="job-location-wrapper">City, State</p>
             <div className="school-info-wrapper">
               <div className="school-wrapper"></div>
               <p>0 school alumni work here</p>
