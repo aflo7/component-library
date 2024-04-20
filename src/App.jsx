@@ -20,6 +20,7 @@ import { default as CarbonWebButton } from './components/carbonweb/Button';
 import { default as BeeHexNavigation } from './components/beehex/Navigation';
 import { default as BatteriNavigation } from './components/batterii/Navigation';
 import { default as SoharsNavigation } from './components/sohars/Navigation';
+import Post from './components/reddit/Post';
 import Subscribe from './components/twitter/Subscribe';
 
 export const Home = () => {
@@ -56,6 +57,8 @@ export const Home = () => {
       <Link to="/modal">
         <div className="home-link">Modal Component</div>
       </Link>
+
+     
 
       {/* <Link to="/keybank">
         <div className="home-link">Keybank Navigation Component</div>
@@ -99,6 +102,10 @@ export const Home = () => {
       <Link to="/innovation-card">
         <div className="home-link">Innovation Card Component</div>
       </Link>
+
+      <Link to="/reddit/post">
+        <div className="home-link">Reddit Post Component</div>
+      </Link>
     </div>
   );
 };
@@ -137,6 +144,8 @@ export default function App() {
           <Route path="/sohars" element={<SoharsNavigation />} />
           <Route path="/marketplace" element={<FacebookSidebar />} />
           <Route path="/subscribe" element={<Subscribe />} />
+          <Route path="/reddit/post" element={<Post />} />
+
 
           <Route path="/innovation-card" element={<InnovationCard />} />
 
