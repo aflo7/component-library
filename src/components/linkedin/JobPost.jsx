@@ -14,13 +14,13 @@ const JobPost = () => {
 
       <div className="job-post-wrapper">
         <div className="job-post">
-          <div className="img-wrapper"></div>
+          <div className="job-img-wrapper"></div>
           <div className="job-post-right-side">
             <div className="job-title-wrapper">
               <p className="job-title">
                 Product/Category Management Internship - Summer 2024
               </p>
-              <RxCross2 />
+              <RxCross2 className='cross-icon'/>
             </div>
             <p>Company Name</p>
             <p className="job-location-wrapper">City, State</p>
