@@ -24,7 +24,9 @@ import Post from './components/reddit/Post';
 import Subscribe from './components/twitter/Subscribe';
 import JobPost from './components/linkedin/JobPost';
 import { default as FacebookNav } from './components/facebook/Nav';
-
+import PodcastBtn from './components/buttons/PodcastBtn';
+import VideoEditingBtn from './components/buttons/VideoEditingBtn';
+import { PiFilmSlate } from "react-icons/pi";
 export const Home = () => {
   return (
     <>
@@ -108,6 +110,14 @@ export const Home = () => {
         <Link className="react-router-link" to="/linkedin/job-post">
           <div className="home-link">LinkedIn Job Post Component</div>
         </Link>
+
+        <Link className="react-router-link" to="/buttons/podcast">
+          <div className="home-link">Podcast  Button Component</div>
+        </Link>
+
+        <Link className="react-router-link" to="/buttons/video">
+          <div className="home-link">Video Editing Button Component</div>
+        </Link>
       </div>
     </>
   );
@@ -153,6 +163,9 @@ export default function App() {
           <Route path="/linkedin/job-post" element={<JobPost />} />
 
           <Route path="/innovation-card" element={<InnovationCard />} />
+
+          <Route path="/buttons/podcast" element={<PodcastBtn />} />
+          <Route path="/buttons/video" element={<VideoEditingBtn />} />
 
           <Route path="*" element={<NotFound />} />
         </Routes>
