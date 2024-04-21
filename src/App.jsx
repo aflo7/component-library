@@ -23,6 +23,7 @@ import { default as SoharsNavigation } from './components/sohars/Navigation';
 import Post from './components/reddit/Post';
 import Subscribe from './components/twitter/Subscribe';
 import JobPost from './components/linkedin/JobPost';
+import {default as FacebookNav} from './components/facebook/Nav';
 
 export const Home = () => {
   return (
@@ -98,6 +99,10 @@ export const Home = () => {
         <div className="home-link">Marketplace Sidebar Component</div>
       </Link>
 
+      <Link to="/facebook/nav">
+        <div className="home-link">Facebook Nav Component</div>
+      </Link>
+
       <Link to="/innovation-card">
         <div className="home-link">Innovation Card Component</div>
       </Link>
@@ -146,6 +151,8 @@ export default function App() {
           <Route path="/batterii" element={<BatteriNavigation />} />
           <Route path="/sohars" element={<SoharsNavigation />} />
           <Route path="/marketplace" element={<FacebookSidebar />} />
+
+          <Route path="/facebook/nav" element={<FacebookNav />} />
           <Route path="/subscribe" element={<Subscribe />} />
           <Route path="/reddit/post" element={<Post />} />
           <Route path="/linkedin/job-post" element={<JobPost />} />
