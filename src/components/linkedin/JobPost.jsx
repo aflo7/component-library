@@ -20,7 +20,10 @@ const JobPost = () => {
               <p className="job-title">
                 Product/Category Management Internship - Summer 2024
               </p>
+              <div className="cross-icon-wrapper">
+
               <RxCross2 className='cross-icon'/>
+              </div>
             </div>
             <p>Company Name</p>
             <p className="job-location-wrapper">City, State</p>
