@@ -1,14 +1,11 @@
 h1[class='component-library-header'] {
-margin: 0;
-padding: 1rem;
-border-bottom: 1px solid black;
-font-size: 1.5rem;
-background-color: lightgray;
+  margin: 0;
+  padding: 1rem;
+  border-bottom: 1px solid black;
+  font-size: 1.5rem;
+  background-color: lightgray;
 }
 
-h1[class='home-text'] {
-  
-}
 
 * {
   box-sizing: border-box;
@@ -16,15 +13,12 @@ h1[class='home-text'] {
 
 body {
   margin: 0;
-  /* font-family: Verdana, sans-serif; */
   font-family: Arial, sans-serif;
 }
 
 p {
   margin: 0;
-  /* font-size: 1.5rem; */
 }
-
 
 .home-link {
   border: 1px solid black;
@@ -52,14 +46,14 @@ p {
 .documentation-text {
   padding: 1rem;
   max-width: 1000px;
-  /* text-align: justify; */
 }
 
-.documentation-text > p{
+.documentation-text > p {
   padding: 1rem;
 }
 
-a {}
+a {
+}
 
 .not-found-wrapper {
   /* padding: 1rem; */
@@ -85,5 +79,9 @@ a {}
   padding-bottom: 0;
   font-weight: bold;
   font-size: 1.5rem;
-  
+}
+
+.unstyled-link {
+  text-decoration: none;
+  color: black;
 }

@@ -1,0 +1,83 @@
+.adventuresWrapper {
+  height: 100vh;
+  background-image: url(./private-beach.jpeg);
+  background-size: cover;
+  background-position: center;
+}
+
+.privateBeach {
+  width: 100%;
+}
+
+.logoWrapper {
+  display: flex;
+  flex-direction: column;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
+
+.faCircleTop,
+.faCircleBottom {
+  height: 20px;
+  width: 20px;
+}
+
+.faCircleBottom {
+  align-self: flex-end;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid black;
+  padding-bottom: 1.5rem;
+  padding-top: 3rem;
+}
+
+.rightNav {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+
+.rightNav > p {
+  cursor: pointer;
+}
+
+.navWrapper {
+  padding: 1rem 2rem;
+}
+
+.adventurersWelcomeHeader {
+  font-size: 2rem;
+}
+
+@media screen and (min-width: 700px) {
+  .rightNav {
+    gap: 5rem;
+  }
+
+  .adventurersWelcomeHeader {
+    font-size: 3rem;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .rightNav {
+    gap: 7rem;
+  }
+}
+
+.adventuresWelcomeWrapper {
+  padding: 3rem 4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.escapeText {
+  text-decoration: underline;
+  cursor: pointer;
+}

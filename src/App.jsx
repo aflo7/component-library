@@ -7,8 +7,6 @@ import { default as VistaNavigation } from './components/vista/Navigation';
 import { default as SerigraphNavigation } from './components/serigraph/Navigation';
 import { default as VetsAccessNavigation } from './components/vets-access/Navigation';
 import Modal from './components/modal/Modal';
-// import { default as KeyBankNavigation } from './components/keybank/Navigation';
-// import { default as BunzlNavigation } from './components/bunzl/Navigation';
 import Sidebar from './components/sidebar/Sidebar';
 import { default as FacebookSidebar } from './components/facebook/Sidebar';
 import { default as InnovationCard } from './components/magna/Innovation';
@@ -26,7 +24,7 @@ import JobPost from './components/linkedin/JobPost';
 import { default as FacebookNav } from './components/facebook/Nav';
 import PodcastBtn from './components/buttons/PodcastBtn';
 import VideoEditingBtn from './components/buttons/VideoEditingBtn';
-import { PiFilmSlate } from "react-icons/pi";
+import Adventures from './components/adventures-welcome/Adventures';
 export const Home = () => {
   return (
     <>
@@ -55,13 +53,6 @@ export const Home = () => {
         <Link className="react-router-link" to="/modal">
           <div className="home-link">Modal Component</div>
         </Link>
-
-        {/* <Link to="/keybank">
-        <div className="home-link">Keybank Navigation Component</div>
-      </Link> */}
-        {/* <Link to="/bunzl">
-        <div className="home-link">Bunzl Footer Component</div>
-      </Link> */}
 
         <Link className="react-router-link" to="/zoll">
           <div className="home-link">Zoll Navigation Component</div>
@@ -112,11 +103,15 @@ export const Home = () => {
         </Link>
 
         <Link className="react-router-link" to="/buttons/podcast">
-          <div className="home-link">Podcast  Button Component</div>
+          <div className="home-link">Podcast Button Component</div>
         </Link>
 
         <Link className="react-router-link" to="/buttons/video">
           <div className="home-link">Video Editing Button Component</div>
+        </Link>
+
+        <Link className="react-router-link" to="/adventures">
+          <div className="home-link">Adventures Page</div>
         </Link>
       </div>
     </>
@@ -138,7 +133,9 @@ export default function App() {
   return (
     <>
       <HashRouter basename="">
-        <h1 className="component-library-header">Component Library</h1>
+        <Link className="unstyled-link" to="/">
+          <h1 className="component-library-header">Component Library</h1>
+        </Link>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/avixa" element={<AvixaNavigation />} />
@@ -166,6 +163,7 @@ export default function App() {
 
           <Route path="/buttons/podcast" element={<PodcastBtn />} />
           <Route path="/buttons/video" element={<VideoEditingBtn />} />
+          <Route path="/adventures" element={<Adventures />} />
 
           <Route path="*" element={<NotFound />} />
         </Routes>
