@@ -1,9 +1,13 @@
-h1 {
+h1[class='component-library-header'] {
 margin: 0;
 padding: 1rem;
 border-bottom: 1px solid black;
 font-size: 1.5rem;
 background-color: lightgray;
+}
+
+h1[class='home-text'] {
+  
 }
 
 * {
@@ -63,4 +67,23 @@ a {}
 
 .back-link-wrapper {
   border-bottom: 1px solid black;
+}
+
+.react-router-link {
+  width: fit-content;
+}
+
+.home-container {
+  display: flex;
+  padding: 1rem;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.home-text {
+  padding: 1rem;
+  padding-bottom: 0;
+  font-weight: bold;
+  font-size: 1.5rem;
+  
 }

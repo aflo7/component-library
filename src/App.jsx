@@ -23,98 +23,93 @@ import { default as SoharsNavigation } from './components/sohars/Navigation';
 import Post from './components/reddit/Post';
 import Subscribe from './components/twitter/Subscribe';
 import JobPost from './components/linkedin/JobPost';
-import {default as FacebookNav} from './components/facebook/Nav';
+import { default as FacebookNav } from './components/facebook/Nav';
 
 export const Home = () => {
   return (
-    <div
-      className="home-container"
-      style={{
-        padding: '1rem',
-        display: 'flex',
-        flexDirection: 'column',
-        gap: '1rem'
-      }}
-    >
-      <Link to="/avixa">
-        <div className="home-link">Avixa Navigation Component</div>
-      </Link>
+    <>
+      <h1 className="home-text">Home</h1>
+      <div className="home-container">
+        <Link className="react-router-link" to="/avixa">
+          <div className="home-link">Avixa Navigation Component</div>
+        </Link>
 
-      <Link to="/subscribe">
-        <div className="home-link">"Subscribe To Premium" Component</div>
-      </Link>
+        <Link className="react-router-link" to="/subscribe">
+          <div className="home-link">"Subscribe To Premium" Component</div>
+        </Link>
 
-      <Link to="/vista">
-        <div className="home-link">Vista Navigation Component</div>
-      </Link>
+        <Link className="react-router-link" to="/vista">
+          <div className="home-link">Vista Navigation Component</div>
+        </Link>
 
-      <Link to="/serigraph">
-        <div className="home-link">Serigraph Navigation Component</div>
-      </Link>
+        <Link className="react-router-link" to="/serigraph">
+          <div className="home-link">Serigraph Navigation Component</div>
+        </Link>
 
-      <Link to="/vets-access">
-        <div className="home-link">Vets Access LLC Navigation Component</div>
-      </Link>
+        <Link className="react-router-link" to="/vets-access">
+          <div className="home-link">Vets Access LLC Navigation Component</div>
+        </Link>
 
-      <Link to="/modal">
-        <div className="home-link">Modal Component</div>
-      </Link>
+        <Link className="react-router-link" to="/modal">
+          <div className="home-link">Modal Component</div>
+        </Link>
 
-      {/* <Link to="/keybank">
+        {/* <Link to="/keybank">
         <div className="home-link">Keybank Navigation Component</div>
       </Link> */}
-      {/* <Link to="/bunzl">
+        {/* <Link to="/bunzl">
         <div className="home-link">Bunzl Footer Component</div>
       </Link> */}
 
-      <Link to="/zoll">
-        <div className="home-link">Zoll Navigation Component</div>
-      </Link>
+        <Link className="react-router-link" to="/zoll">
+          <div className="home-link">Zoll Navigation Component</div>
+        </Link>
 
-      <Link to="/sidebar">
-        <div className="home-link">NetJets Sidebar Component</div>
-      </Link>
+        <Link className="react-router-link" to="/sidebar">
+          <div className="home-link">NetJets Sidebar Component</div>
+        </Link>
 
-      <Link to="/carbon-web">
-        <div className="home-link">CarbonWeb Button Component</div>
-      </Link>
+        <Link className="react-router-link" to="/carbon-web">
+          <div className="home-link">CarbonWeb Button Component</div>
+        </Link>
 
-      <Link to="/magna">
-        <div className="home-link">Magna Navigation Component</div>
-      </Link>
+        <Link className="react-router-link" to="/magna">
+          <div className="home-link">Magna Navigation Component</div>
+        </Link>
 
-      <Link to="/beehex">
-        <div className="home-link">BeeHex Navigation Component</div>
-      </Link>
+        <Link className="react-router-link" to="/beehex">
+          <div className="home-link">BeeHex Navigation Component</div>
+        </Link>
 
-      <Link to="/batterii">
-        <div className="home-link">Batterii Navigation Component</div>
-      </Link>
+        <Link className="react-router-link" to="/batterii">
+          <div className="home-link">Batterii Navigation Component</div>
+        </Link>
 
-      <Link to="/sohars">
-        <div className="home-link">Sohars Navigation Component</div>
-      </Link>
+        <Link className="react-router-link" to="/sohars">
+          <div className="home-link">Sohars Navigation Component</div>
+        </Link>
 
-      <Link to="/marketplace">
-        <div className="home-link">Marketplace Sidebar Component</div>
-      </Link>
+        <Link className="react-router-link" to="/marketplace">
+          <div className="home-link">Marketplace Sidebar Component</div>
+        </Link>
 
-      <Link to="/facebook/nav">
-        <div className="home-link">Facebook Nav Component</div>
-      </Link>
+        <Link className="react-router-link" to="/facebook/nav">
+          <div className="home-link">Facebook Nav Component</div>
+        </Link>
 
-      <Link to="/innovation-card">
-        <div className="home-link">Innovation Card Component</div>
-      </Link>
+        <Link className="react-router-link" to="/innovation-card">
+          <div className="home-link">Innovation Card Component</div>
+        </Link>
 
-      <Link to="/reddit/post">
-        <div className="home-link">Reddit Post Component</div>
-      </Link>
+        <Link className="react-router-link" to="/reddit/post">
+          <div className="home-link">Reddit Post Component</div>
+        </Link>
 
-      <Link to="/linkedin/job-post">
-        <div className="home-link">LinkedIn Job Post Component</div>
-      </Link>
-    </div>
+        <Link className="react-router-link" to="/linkedin/job-post">
+          <div className="home-link">LinkedIn Job Post Component</div>
+        </Link>
+      </div>
+    </>
   );
 };
 
@@ -133,7 +128,7 @@ export default function App() {
   return (
     <>
       <HashRouter basename="">
-        <h1>Component Library</h1>
+        <h1 className="component-library-header">Component Library</h1>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/avixa" element={<AvixaNavigation />} />
@@ -156,7 +151,6 @@ export default function App() {
           <Route path="/subscribe" element={<Subscribe />} />
           <Route path="/reddit/post" element={<Post />} />
           <Route path="/linkedin/job-post" element={<JobPost />} />
-
 
           <Route path="/innovation-card" element={<InnovationCard />} />
 
