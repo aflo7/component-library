@@ -1,13 +1,11 @@
-@import url("https://fonts.googleapis.com/css?family=Roboto");
+@import url('https://fonts.googleapis.com/css?family=Roboto');
 
 .adventuresWrapper {
   height: 100vh;
   background-image: url(./private-beach.jpeg);
   background-size: cover;
   background-position: center;
-  /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
   font-family: 'Roboto';
-
 }
 
 .privateBeach {
@@ -42,13 +40,46 @@
 }
 
 .rightNav {
-  display: flex;
-  align-items: center;
-  gap: 3rem;
+  display: none;
 }
 
-.rightNav > p {
+.burger {
+  display: flex;
   cursor: pointer;
+  font-size: 1.75rem;
+  color: black;
+}
+
+.burgerWrapper {
+  position: relative;
+  padding: 0.25rem;
+}
+
+.burgerWrapper:hover {
+  background-color: white;
+}
+.dropdown {
+  display: none;
+  position: absolute;
+  right: 0;
+  background-color: white;
+  padding: 0.25rem;
+}
+
+.dropdown p {
+  padding: 0.25rem;
+  padding-right: 5rem;
+  border: 1px solid black;
+}
+
+.dropdown p:hover {
+  background-color: lightgray;
+}
+
+.burgerWrapper:hover .dropdown {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
 }
 
 .navWrapper {
@@ -61,7 +92,12 @@
 
 @media screen and (min-width: 700px) {
   .rightNav {
-    gap: 5rem;
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+  }
+  .burgerWrapper {
+    display: none;
   }
 
   .adventurersWelcomeHeader {
@@ -71,7 +107,7 @@
 
 @media screen and (min-width: 1000px) {
   .rightNav {
-    gap: 7rem;
+    gap: 6rem;
   }
 }
 
@@ -85,4 +121,15 @@
 .escapeText {
   text-decoration: underline;
   cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  transition: gap 0.25s;
+  .chevronRight {
+    color: gray;
+  }
+}
+
+.escapeText:hover {
+  gap: 0.5rem;
 }
