@@ -111,7 +111,7 @@ export const Home = () => {
         </Link>
 
         <Link className="react-router-link" to="/adventures">
-          <div className="home-link">Adventures Page</div>
+          <div className="home-link">Adventures Page (Accessible)</div>
         </Link>
       </div>
     </>
@@ -133,9 +133,11 @@ export default function App() {
   return (
     <>
       <HashRouter basename="">
-        <Link className="unstyled-link" to="/">
-          <h1 className="component-library-header">Component Library</h1>
-        </Link>
+        <h1 className="component-library-header">
+          <Link className="unstyled-link" to="/">
+            Component Library
+          </Link>
+        </h1>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/avixa" element={<AvixaNavigation />} />

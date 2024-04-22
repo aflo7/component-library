@@ -37,6 +37,8 @@ p {
   border-radius: 5px;
   cursor: pointer;
   margin: 1rem;
+  /* border: 5px solid red; */
+
 }
 
 .back-link:hover {
@@ -61,6 +63,7 @@ a {
 
 .back-link-wrapper {
   border-bottom: 1px solid black;
+  /* border: 5px solid red; */
 }
 
 .react-router-link {
