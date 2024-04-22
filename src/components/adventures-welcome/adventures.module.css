@@ -1,8 +1,13 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+
 .adventuresWrapper {
   height: 100vh;
   background-image: url(./private-beach.jpeg);
   background-size: cover;
   background-position: center;
+  /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
+  font-family: 'Roboto';
+
 }
 
 .privateBeach {
