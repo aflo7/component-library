@@ -25,6 +25,7 @@ import { default as FacebookNav } from './components/facebook/Nav';
 import PodcastBtn from './components/buttons/PodcastBtn';
 import VideoEditingBtn from './components/buttons/VideoEditingBtn';
 import Adventures from './components/adventures-welcome/Adventures';
+import Featured from './components/ebay/Featured';
 export const Home = () => {
   return (
     <>
@@ -113,6 +114,10 @@ export const Home = () => {
         <Link className="react-router-link" to="/adventures">
           <div className="home-link">Adventures Page (Accessible)</div>
         </Link>
+
+        <Link className="react-router-link" to="/ebay">
+          <div className="home-link">Ebay Featured Component</div>
+        </Link>
       </div>
     </>
   );
@@ -166,6 +171,7 @@ export default function App() {
           <Route path="/buttons/podcast" element={<PodcastBtn />} />
           <Route path="/buttons/video" element={<VideoEditingBtn />} />
           <Route path="/adventures" element={<Adventures />} />
+          <Route path="/ebay" element={<Featured />} />
 
           <Route path="*" element={<NotFound />} />
         </Routes>

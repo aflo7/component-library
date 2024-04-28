@@ -1,0 +1,44 @@
+.featuredWrapper {
+  border: 1px solid lightgray;
+  width: 275px;
+  margin: 0 auto;
+  margin-top: 1rem;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.img {
+  width: 100%;
+}
+
+.ebayLogo {
+  height: 30px;
+  width: fit-content;
+}
+
+.getYourThing {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.bottomText {
+  padding: 0.25rem 1rem 1rem 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.featuredText {
+  color: rgb(124,124,124);
+  font-size: 0.8rem;
+}
+
+.ebayLink {
+  text-decoration: none;
+  color: black;
+}
+
+.rightArrow {
+  font-size: 1.75rem;
+}
