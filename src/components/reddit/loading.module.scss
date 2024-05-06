@@ -1,0 +1,18 @@
+.loadingWrapper {
+  display: grid;
+  width: fit-content;
+  margin: 0 auto;
+  margin-top: 1rem;
+}
+
+.logo {
+  grid-area: 1/1;
+  height: 150px;
+  margin: 0.75rem;
+}
+
+.gridChild {
+  grid-area: 1/1;
+  background-color: rgb(253, 63, 33) !important;
+  z-index: -1;
+}

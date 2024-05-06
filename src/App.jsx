@@ -26,6 +26,7 @@ import PodcastBtn from './components/buttons/PodcastBtn';
 import VideoEditingBtn from './components/buttons/VideoEditingBtn';
 import Adventures from './components/adventures-welcome/Adventures';
 import Featured from './components/ebay/Featured';
+import Loading from './components/reddit/Loading';
 export const Home = () => {
   return (
     <>
@@ -99,6 +100,10 @@ export const Home = () => {
           <div className="home-link">Reddit Post Component</div>
         </Link>
 
+        <Link className="react-router-link" to="/reddit/loading">
+          <div className="home-link">Reddit Loading Component</div>
+        </Link>
+
         <Link className="react-router-link" to="/linkedin/job-post">
           <div className="home-link">LinkedIn Job Post Component</div>
         </Link>
@@ -164,6 +169,8 @@ export default function App() {
           <Route path="/facebook/nav" element={<FacebookNav />} />
           <Route path="/subscribe" element={<Subscribe />} />
           <Route path="/reddit/post" element={<Post />} />
+          <Route path="/reddit/loading" element={<Loading />} />
+
           <Route path="/linkedin/job-post" element={<JobPost />} />
 
           <Route path="/innovation-card" element={<InnovationCard />} />
