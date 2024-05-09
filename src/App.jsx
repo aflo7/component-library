@@ -27,6 +27,7 @@ import VideoEditingBtn from './components/buttons/VideoEditingBtn';
 import Adventures from './components/adventures-welcome/Adventures';
 import Featured from './components/ebay/Featured';
 import Loading from './components/reddit/Loading';
+import Headphones from './components/cart-item/Headphones';
 export const Home = () => {
   return (
     <>
@@ -121,7 +122,11 @@ export const Home = () => {
         </Link>
 
         <Link className="react-router-link" to="/ebay">
-          <div className="home-link">Ebay Featured Component</div>
+          <div className="home-link">Ebay Featured</div>
+        </Link>
+
+        <Link className="react-router-link" to="/headphones">
+          <div className="home-link">Cart Item: Headphones</div>
         </Link>
       </div>
     </>
@@ -179,6 +184,8 @@ export default function App() {
           <Route path="/buttons/video" element={<VideoEditingBtn />} />
           <Route path="/adventures" element={<Adventures />} />
           <Route path="/ebay" element={<Featured />} />
+          <Route path="/headphones" element={<Headphones />} />
+
 
           <Route path="*" element={<NotFound />} />
         </Routes>
