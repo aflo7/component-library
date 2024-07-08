@@ -28,6 +28,7 @@ import Adventures from './components/adventures-welcome/Adventures';
 import Featured from './components/ebay/Featured';
 import Loading from './components/reddit/Loading';
 import Headphones from './components/cart-item/Headphones';
+import SelectOne from './components/keurig/SelectOne';
 export const Home = () => {
   return (
     <>
@@ -128,6 +129,10 @@ export const Home = () => {
         <Link className="react-router-link" to="/headphones">
           <div className="home-link">Cart Item: Headphones</div>
         </Link>
+
+        <Link className="react-router-link" to="/keurig/select-one">
+          <div className="home-link">Keurig Select One</div>
+        </Link>
       </div>
     </>
   );
@@ -185,6 +190,8 @@ export default function App() {
           <Route path="/adventures" element={<Adventures />} />
           <Route path="/ebay" element={<Featured />} />
           <Route path="/headphones" element={<Headphones />} />
+          <Route path="/keurig/select-one" element={<SelectOne />} />
+
 
 
           <Route path="*" element={<NotFound />} />
